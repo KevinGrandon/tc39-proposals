@@ -24,6 +24,60 @@ These are two functions that exist in a majority of websites and frameworks. For
 It is highly probable that the majority of current String padding implementations are inefficient. Bringing this into the platform will improve performance of the web, and developer productivity as they no longer have to implement these common functions. 
 
 
+###lpad specification###
+
+1. Call CheckObjectCoercible passing the **this** value as its argument.
+
+2. Let *S* be the result of calling ToString, giving it the **this** value as its argument.
+
+3. ReturnIfAbrupt(S).
+
+4. Let *intMinLength* be ToInteger(minLength).
+
+5. ReturnIfAbrupt(intMinLength).
+
+4. If *intMinLength* is **undefined**, return *S*.
+
+5. Let *fillLen* be the number of characters in *S* minus *intMinLength*.
+
+6. If *fillLen* < 0, then throw a RangeError exception.
+
+7. If *fillLen* is +∞, then throw a RangeError exception.
+
+8. Let *chFillChar* be the character represented by fillChar.
+
+9. If *chFillChar* is **undefined**, let *chFillChar* be a space character.
+
+10. Return a String containing *fillLen* repitions of *chFillChar*, followed by *S*.</li>
+
+
+###rpad specification###
+
+1. Call CheckObjectCoercible passing the **this** value as its argument.
+
+2. Let *S* be the result of calling ToString, giving it the **this** value as its argument.
+
+3. ReturnIfAbrupt(S).
+
+4. Let *intMinLength* be ToInteger(minLength).
+
+5. ReturnIfAbrupt(intMinLength).
+
+4. If *intMinLength* is **undefined**, return *S*.
+
+5. Let *fillLen* be the number of characters in *S* minus *intMinLength*.
+
+6. If *fillLen* < 0, then throw a RangeError exception.
+
+7. If *fillLen* is +∞, then throw a RangeError exception.
+
+8. Let *chFillChar* be the character represented by fillChar.
+
+9. If *chFillChar* is **undefined**, let *chFillChar* be a space character.
+
+10. **rpad**: Return a String containing *S*, followed by *fillLen* repitions of *chFillChar*.</li>
+
+
 **Naming convention:**
 
 Currently named lpad and rpad for berevity and readability, but we are willing to consider alternatives. Potential alternatives include ljust and rjust,  or the more verbose padLeft and padRight. See the next precedents section.
