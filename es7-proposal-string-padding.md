@@ -1,8 +1,8 @@
 ## Proposal: Addition of string padding functions.
 
 ```
-String.prototype.lpad(minLength, fillChar)
-String.prototype.rpad(minLength, fillChar)
+String.prototype.lpad(minLength, fillChar = ' ')
+String.prototype.rpad(minLength, fillChar = ' ')
 ```
 
 **Arguments:**
