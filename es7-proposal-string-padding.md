@@ -40,9 +40,9 @@ It is highly probable that the majority of current String padding implementation
 
 5. Let *fillLen* be the number of characters in *S* minus *intMinLength*.
 
-6. If *fillLen* < 0, then throw a RangeError exception.
+6. If *fillLen* < 0, then throw a **RangeError** exception.
 
-7. If *fillLen* is +∞, then throw a RangeError exception.
+7. If *fillLen* is +∞, then throw a **RangeError** exception.
 
 8. Let *chFillChar* be the character represented by fillChar.
 
@@ -67,9 +67,9 @@ It is highly probable that the majority of current String padding implementation
 
 5. Let *fillLen* be the number of characters in *S* minus *intMinLength*.
 
-6. If *fillLen* < 0, then throw a RangeError exception.
+6. If *fillLen* < 0, then throw a **RangeError** exception.
 
-7. If *fillLen* is +∞, then throw a RangeError exception.
+7. If *fillLen* is +∞, then throw a **RangeError** exception.
 
 8. Let *chFillChar* be the character represented by fillChar.
 
