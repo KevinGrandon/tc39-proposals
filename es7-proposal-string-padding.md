@@ -75,7 +75,7 @@ It is highly probable that the majority of current String padding implementation
 
 9. If *chFillChar* is **undefined**, let *chFillChar* be a space character.
 
-10. **rpad**: Return a String containing *S*, followed by *fillLen* repitions of *chFillChar*.</li>
+10. Return a String containing *S*, followed by *fillLen* repitions of *chFillChar*.</li>
 
 
 **Naming convention:**
