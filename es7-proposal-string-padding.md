@@ -26,9 +26,9 @@ It is highly probable that the majority of current String padding implementation
 
 ###lpad specification###
 
-1. Call CheckObjectCoercible passing the **this** value as its argument.
+1. Let *O* be CheckObjectCoercible(**this** value).
 
-2. Let *S* be the result of calling ToString, giving it the **this** value as its argument.
+2. Let *S* be ToString(O).
 
 3. ReturnIfAbrupt(S).
 
@@ -53,9 +53,9 @@ It is highly probable that the majority of current String padding implementation
 
 ###rpad specification###
 
-1. Call CheckObjectCoercible passing the **this** value as its argument.
+1. Let *O* be CheckObjectCoercible(**this** value).
 
-2. Let *S* be the result of calling ToString, giving it the **this** value as its argument.
+2. Let *S* be ToString(O).
 
 3. ReturnIfAbrupt(S).
 
